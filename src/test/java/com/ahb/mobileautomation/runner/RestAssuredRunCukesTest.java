@@ -8,7 +8,6 @@ import com.ahb.mobileautomation.utils.ExtentReportGenerator;
 import com.cucumber.listener.Reporter;
 
 import cucumber.api.CucumberOptions;
-
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
@@ -17,8 +16,8 @@ import org.testng.annotations.*;
 
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = {"com.ahb.mobileautomation"},
-        tags = {"@regression"},
+        glue = {"com.ahb.apiautomation.stepdefinations"},
+        tags = {"@apiRegression"},
         dryRun = false,
         plugin = {
                 "html:target/cucumber-reports/cucumber-pretty", 
@@ -27,7 +26,7 @@ import org.testng.annotations.*;
                 "pretty",
                 "rerun:target/cucumber-reports/rerun.txt"
         })
-public class RunCukesTest {
+public class RestAssuredRunCukesTest {
 
     private TestNGCucumberRunner testNGCucumberRunner;
 
@@ -39,7 +38,6 @@ public class RunCukesTest {
 
     @Test(description = "Runs Cucumber Feature", dataProvider = "features")
     public void feature(CucumberFeatureWrapper cucumberFeature) {
-    	System.setProperty("platform", "iOS");
         testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
     }
 

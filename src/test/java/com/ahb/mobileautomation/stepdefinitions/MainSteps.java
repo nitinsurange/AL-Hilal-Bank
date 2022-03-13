@@ -1,18 +1,11 @@
  package com.ahb.mobileautomation.stepdefinitions;
 
-import java.io.IOException;
 
-import org.testng.Assert;
 
 import com.ahb.mobileautomation.pages.HomePage;
 import com.ahb.mobileautomation.pages.IntroPages;
 import com.ahb.mobileautomation.pages.MenuPage;
-import com.ahb.mobileautomation.utils.CapsJsonParser;
-import com.cucumber.listener.Reporter;
 
-import cucumber.api.PendingException;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.appium.java_client.AppiumDriver;

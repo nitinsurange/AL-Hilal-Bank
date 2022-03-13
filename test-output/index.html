@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ahb.mobileautomation.runner.RunCukesTest" hash-for-method="feature(Call us features)">feature(Call us features)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,12 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ahb.mobileautomation.runner.RunCukesTest" hash-for-method="feature(Live Chat features)">feature(Live Chat features)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ahb.mobileautomation.runner.RunCukesTest" hash-for-method="feature(Intro Screen features)">feature(Intro Screen features)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ahb.mobileautomation.runner.RestAssuredRunCukesTest" hash-for-method="feature(Rest API Scenarios for ReqRes scenarios)">feature(Rest API Scenarios for ReqRes scenarios)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -136,84 +117,18 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.ahb.mobileautomation.runner.RunCukesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="feature(Call us features)">
-                  </a> <!-- feature(Call us features) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(Call us features)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: junit.framework.AssertionFailedError: Both actual and expected are mismatched expected:&lt;600522228&gt; but was:&lt;600522229&gt;
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at com.ahb.mobileautomation.runner.RunCukesTest.feature(RunCukesTest.java:55)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: junit.framework.AssertionFailedError: Both actual and expected are mismatched expected:&lt;600522228&gt; but was:&lt;600522229&gt;
-	at junit.framework.Assert.fail(Assert.java:50)
-	at junit.framework.Assert.failNotEquals(Assert.java:287)
-	at junit.framework.Assert.assertEquals(Assert.java:67)
-	at junit.framework.Assert.assertEquals(Assert.java:199)
-	at com.ahb.mobileautomation.pages.MenuPage.verifyAutoPopulatedNumber(MenuPage.java:97)
-	at com.ahb.mobileautomation.stepdefinitions.MainSteps.check_if_is_auto_populated_in_the_dialer_screen_or_user_will_get_option_to_call_the_same_number(MainSteps.java:101)
-	at ✽.Then Check if ‘600522228’ is auto-populated in the dialer screen or user will get option to call the same number(3Callus.feature:18)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Feature)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.ahb.mobileautomation.runner.RunCukesTest</span>
+              <span class="class-name">com.ahb.mobileautomation.runner.RestAssuredRunCukesTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Live Chat features)">
-                  </a> <!-- feature(Live Chat features) -->
+                  <a name="feature(Rest API Scenarios for ReqRes scenarios)">
+                  </a> <!-- feature(Rest API Scenarios for ReqRes scenarios) -->
                   <span class="method-name">feature</span>
-                  <span class="parameters">(Live Chat features)</span>
-                  <em>
-(Runs Cucumber Feature)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="feature(Intro Screen features)">
-                  </a> <!-- feature(Intro Screen features) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(Intro Screen features)</span>
+                  <span class="parameters">(Rest API Scenarios for ReqRes scenarios)</span>
                   <em>
 (Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
@@ -223,7 +138,7 @@ Caused by: junit.framework.AssertionFailedError: Both actual and expected are mi
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/mk/t01t73kd64l5pmj15d3t_fqhkb8078/T/testng-eclipse--771179942/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/25/p28hs__56pjb3wfqgpxwk77w0000gp/T/testng-eclipse--1706647214/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -232,7 +147,7 @@ Caused by: junit.framework.AssertionFailedError: Both actual and expected are mi
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.ahb.mobileautomation.runner.RunCukesTest&quot;/&gt;
+      &lt;class name=&quot;com.ahb.mobileautomation.runner.RestAssuredRunCukesTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -272,24 +187,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
-data.setCell(0, 2, 'com.ahb.mobileautomation.runner.RunCukesTest')
-data.setCell(0, 3, 43404);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'feature')
-data.setCell(1, 2, 'com.ahb.mobileautomation.runner.RunCukesTest')
-data.setCell(1, 3, 23524);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'feature')
-data.setCell(2, 2, 'com.ahb.mobileautomation.runner.RunCukesTest')
-data.setCell(2, 3, 18475);
+data.setCell(0, 2, 'com.ahb.mobileautomation.runner.RestAssuredRunCukesTest')
+data.setCell(0, 3, 9004);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -315,32 +222,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.ahb.mobileautomation.runner.RunCukesTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.ahb.mobileautomation.runner.RestAssuredRunCukesTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">feature(Intro Screen features)</span>
-                <span class="method-start">322 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">feature(Live Chat features)</span>
-                <span class="method-start">43728 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">feature(Call us features)</span>
-                <span class="method-start">62204 ms</span>
+                <span class="method-name">feature(Rest API Scenarios for ReqRes scenarios)</span>
+                <span class="method-start">391 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">85731 ms</span>
+                <span class="method-start">9397 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">generateExtentReport</span>
-                <span class="method-start">86045 ms</span>
+                <span class="method-start">10010 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

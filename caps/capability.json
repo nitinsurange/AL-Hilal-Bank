@@ -1,0 +1,30 @@
+{
+	"platforms": [
+		{
+			"ios": {
+				"app": "",
+				"platformVersion": "14.6",
+				"deviceName": "iPhone nitin",
+				"udid": "37433ec3cc47109e66a6081c4db6a896840f90ca",
+				"udid_simulator": "408BC5AD-37CE-48FF-975A-2A4EB6846DCA",
+				"automationName": "XCUITest",
+				"xcodeOrgId": "",
+				"xcodeSigningId": "iPhone Developer",
+				"bundleId": "ae.ahb.digital.prod",
+				"resetOnSessionStartOnly": "false",
+				"useNewWDA": "true",
+				"updatedWDABundleId": "true"
+			}
+		},
+		{
+			"android": {
+			"platformVersion": "9",
+				"deviceName": "LNZT6LYTAIEUPJ8S",
+               "appPackage": "ae.ahb.digital",
+               "appActivity": "ae.ahb.digital.onboarding.splash.ui.SplashActivity",
+				"automationName": "uiautomator2",
+				"fullReset": "true"
+			}
+		}
+	]
+}

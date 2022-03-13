@@ -98,10 +98,29 @@ public class MainSteps {
 	
 	@Then("^Check if ‘(\\d+)’ is auto-populated in the dialer screen or user will get option to call the same number$")
 	public void check_if_is_auto_populated_in_the_dialer_screen_or_user_will_get_option_to_call_the_same_number(int arg1) throws Throwable {
-		menuPage.verifyAutoPopulatedNumber(arg1);
+		if (System.getProperty("platform").equalsIgnoreCase("android")) {
+			menuPage.verifyAutoPopulatedNumber(arg1);
+
+		}else {
+			String expectedioscallusnumber="6005-22229";
+			menuPage.iOS_verifyAutoPopulatedNumber(expectedioscallusnumber);
+
+		}
 	}
 	
-	
+	@Then("^Verify if ‘(\\d+)’ is auto-populated in the dialer screen or user will get option to call the same number$")
+	public void verify_if_is_auto_populated_in_the_dialer_screen_or_user_will_get_option_to_call_the_same_number(int arg1) throws Throwable {
+		if (System.getProperty("platform").equalsIgnoreCase("android")) {
+			menuPage.verifyAutoPopulatedNumber(arg1);
+
+		}else {
+			String expectedioscallusnumber="6005-22228";
+			menuPage.iOS_verifyAutoPopulatedNumber(expectedioscallusnumber);
+
+		}
+		
+	}
+
 
 	
 }

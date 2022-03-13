@@ -96,24 +96,25 @@ public class MenuPage extends BasePage {
 
 	public void verifyAutoPopulatedNumber(int expnumber) {
 		
-		String actualNo = getText(dailer_input);
-		if (System.getProperty("platform").equalsIgnoreCase("android")) {
+			String actualNo = getText(dailer_input);
 
 		actualNo = actualNo.replaceAll("\\s+", "");
 		int actNo = Integer.valueOf(actualNo);
 		System.out.println("actualNo::"+actNo);
 		System.out.println("expected No::"+expnumber);
 		Assert.assertEquals("Asserting Call Us contact Number", expnumber, actNo);
-		}else {
-			actualNo = actualNo.replaceAll("call ", "");
-			int actNo = Integer.valueOf(actualNo);
-			System.out.println("actualNo::"+actNo);
-			System.out.println("expected No::"+expnumber);
-			Assert.assertEquals("Asserting Call Us contact Number", expnumber, actNo);
-		}
+		
 	}
 	
-	
+	public void iOS_verifyAutoPopulatedNumber(String expectediosnumber) {
+		
+			String actualNoios = getText(dailer_input);
+			actualNoios = actualNoios.replaceAll("Call ", "");
+			System.out.println("actualNo::"+actualNoios);
+			System.out.println("expected No::"+expectediosnumber);
+			Assert.assertEquals("Asserting Call Us contact Number", expectediosnumber, actualNoios);
+			
+	}
 	
 	
 	

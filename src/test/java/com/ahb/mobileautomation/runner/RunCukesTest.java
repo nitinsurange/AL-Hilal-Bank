@@ -30,7 +30,7 @@ import org.testng.annotations.*;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"com.ahb.mobileautomation"},
-        tags = {"@callus"},
+        tags = {"@regression"},
         dryRun = false,
         plugin = {
                 "html:target/cucumber-reports/cucumber-pretty", 

@@ -66,6 +66,7 @@ public class MenuPage extends BasePage {
 
 
 	public void verifyOptiontoType() {
+//		This verification will not work as DOM is missing for type a message field so cannot find element to locate element
 		waitForVisibilityOf(ok_Btn, driver);
 		Assert.assertTrue(chat.isDisplayed());
 	}
